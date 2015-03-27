@@ -1,0 +1,14 @@
+2015-03-27 15:24:52.919 socket.io-example[81918:828299] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/poppin3000/Library/Developer/CoreSimulator/Devices/2DBE9AB3-9636-456B-9591-955AB61BDC85/data/Containers/Data/Application/205EF1DC-0ADB-4AB0-8B45-11FF254F29B0/Library/Cookies/Cookies.binarycookies
+2015-03-27 15:24:53.702 socket.io-example[81918:828299] Apache Cordova native platform version 3.8.0 is starting.
+2015-03-27 15:24:53.703 socket.io-example[81918:828299] Multi-tasking -> Device: YES, App: YES
+2015-03-27 15:24:53.750 socket.io-example[81918:828299] Unlimited access to network resources
+2015-03-27 15:24:53.797 socket.io-example[81918:828299] 
+
+Started backup to iCloud! Please be careful.
+Your application might be rejected by Apple if you store too much data.
+For more information please read "iOS Data Storage Guidelines" at:
+https://developer.apple.com/icloud/documentation/data-storage/
+To disable web storage backup to iCloud, set the BackupWebStorage preference to "local" in the Cordova config.xml file
+
+2015-03-27 15:24:56.909 socket.io-example[81918:828299] Resetting plugins due to page load.
+2015-03-27 15:24:57.337 socket.io-example[81918:828299] Finished load of: file:///Users/poppin3000/Library/Developer/CoreSimulator/Devices/2DBE9AB3-9636-456B-9591-955AB61BDC85/data/Containers/Bundle/Application/33043E5C-A81E-4579-8A0F-8CD30C9A8F31/socket.io-example.app/www/index.html
