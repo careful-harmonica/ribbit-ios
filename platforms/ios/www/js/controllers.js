@@ -1,20 +1,46 @@
 angular.module('starter.controllers', [])
 
-.controller('DashCtrl', function($scope) {})
+.controller('FeedbackCtrl', function($scope) {
+	
+	$scope.feedbackItems = [
+		{
+			title: 'THRWOAAME',
+			value: 'abc',
+			intensity: 'positive'
+		},
+		{
+			title: 'PTWGFMD',
+			value: '',
+			intensity: 'calm'
+		},
+		{
+			title: 'FTWEFM',
+			value: '',
+			intensity: 'energized'
+		},
+		{
+			title: 'WNTR',
+			value: '',
+			intensity: 'stable'
+		},
+		{
+			title: 'BTWU',
+			value: '',
+			intensity: 'dark'
+		},
+		{
+			title: 'BHRFSOME',
+			value: '',
+			intensity: 'assertive'
+		}
+	];
 
-.controller('ChatsCtrl', function($scope, Chats) {
-  $scope.chats = Chats.all();
-  $scope.remove = function(chat) {
-    Chats.remove(chat);
-  }
-})
+	$scope.feedbackAction = function(action) {
+		console.log(action);
+	};
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
-  $scope.chat = Chats.get($stateParams.chatId);
 })
 
 .controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+
 });
