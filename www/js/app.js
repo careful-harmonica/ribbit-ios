@@ -20,12 +20,19 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
-  var socket = io.connect('http://localhost:3000');
+  var socket = io.connect('ribtest.ngrok.com:80');
   
   socket.on('connect', function() {
     socket.on('text', function(text) {
       alert(text);
     });
+
+    socket.emit('feedback', {
+      sender: 'me',
+      room: 'legacy',
+      type: 'FTWEFM'
+    });
+
   });
 
 })
