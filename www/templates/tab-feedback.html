@@ -5,7 +5,7 @@
         Tell us your feels
       </ion-item>
       <ion-item ng-repeat="feedback in feedbackItems">
-        <button class="button button-{{ feedback.intensity }}" ng-click="feedbackAction(feedback.value)">{{ feedback.title }}</button>
+        <button class="button button-{{ feedback.intensity }}" ng-click="feedbackAction(feedback.title)">{{ feedback.title }}</button>
       </ion-item>
     </div>
   </ion-content>

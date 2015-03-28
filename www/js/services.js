@@ -1,5 +1,38 @@
 angular.module('starter.services', [])
 
+.factory('Socket', function($ionicPlatform){
+  
+  // TODO: return an object
+  // TODO: create function that accepts type
+
+  var socket;
+
+  $ionicPlatform.ready(function() {
+
+    socket = io.connect('ribtest.ngrok.com:80');
+    
+    socket.on('connect', function() {
+      socket.on('text', function(text) {
+        alert(text);
+      });
+    });
+
+  });
+
+  var sendFeedback = function(value){
+    socket.emit('feedback', {
+      sender: 'me',
+      room: 'legacy',
+      type: value
+    });    
+  }
+
+  return {
+    socket:socket,
+    sendFeedback:sendFeedback
+  }
+})
+
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array
 
