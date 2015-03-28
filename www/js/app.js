@@ -20,22 +20,22 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   });
 
-  var socket = io.connect('ribtest.ngrok.com:80');
+  // var socket = io.connect('ribtest.ngrok.com:80');
   
-  socket.on('connect', function() {
-    socket.on('text', function(text) {
-      alert(text);
-    });
+  // socket.on('connect', function() {
+  //   socket.on('text', function(text) {
+  //     alert(text);
+  //   });
 
-    // demo of the socket sending the poll object to our server
+  //   // demo of the socket sending the poll object to our server
     
-    socket.emit('feedback', {
-      sender: 'me',
-      room: 'legacy',
-      type: 'FTWEFM'
-    });
+  //   socket.emit('feedback', {
+  //     sender: 'me',
+  //     room: 'legacy',
+  //     type: 'FTWEFM'
+  //   });
 
-  });
+  // });
 
 })
 
