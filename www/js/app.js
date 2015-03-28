@@ -19,6 +19,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       StatusBar.styleDefault();
     }
   });
+
+  var socket = io.connect('http://localhost:3000');
+  
+  socket.on('connect', function() {
+    socket.on('text', function(text) {
+      alert(text);
+    });
+  });
+
 })
 
 .config(function($stateProvider, $urlRouterProvider) {
