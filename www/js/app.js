@@ -27,6 +27,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       alert(text);
     });
 
+    // demo of the socket sending the poll object to our server
+    
     socket.emit('feedback', {
       sender: 'me',
       room: 'legacy',
