@@ -1,0 +1,9 @@
+<ion-view view-title="Feedback">
+  <ion-content>
+    <div class="list">
+      <ion-item ng-repeat="feedback in feedbackItems">
+        <button class="button button-{{ feedback.intensity }}" ng-click="feedbackAction(feedback.value)">{{ feedback.title }}</button>
+      </ion-item>
+    </div>
+  </ion-content>
+</ion-view>
